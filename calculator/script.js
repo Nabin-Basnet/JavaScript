@@ -1,4 +1,6 @@
 //to do : making m+ m- mc
+alert("opening calculator");
+
 
 let string="";
 let buttons=document.querySelectorAll('.button');
