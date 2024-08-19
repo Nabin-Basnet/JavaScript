@@ -1,4 +1,5 @@
 
+
 for (let i = 2; i <= 10; i++) {  // Start from 2, as 1 is not considered a prime number
     let index = 0;
     for (let j = 1; j <= i; j++) {
