@@ -1,0 +1,1 @@
+console.log("hello world today i start js journy be ready to face me");
