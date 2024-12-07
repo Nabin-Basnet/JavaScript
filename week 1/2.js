@@ -11,8 +11,8 @@ let isTrue = true; // boolean
 let unknown = null; // null
 let notAssigned; // undefined
 
-console.log(text);
-console.log(num);
-console.log(isTrue);
-console.log(unknown);
-console.log(notAssigned);
+console.log(typeof text);
+console.log(typeof num);
+console.log(typeof isTrue);
+console.log(typeof unknown);
+console.log(typeof notAssigned);
