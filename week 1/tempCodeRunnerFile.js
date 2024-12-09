@@ -1,3 +1,5 @@
-for(let i=0;i<=x;i++){
-//     console.log(i);
+
+// const name=function(name){
+//     console.log(`my name is ,${nabin}`);
 // }
+// name("nabin")
