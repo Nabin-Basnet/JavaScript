@@ -1,0 +1,32 @@
+In JavaScript, events are actions or occurrences that happen in the browser, such as user interactions (clicking, typing, hovering), page loading, or other system-generated events. JavaScript can be used to handle these events and trigger specific functions when they occur -->
+
+types of events
+        mouse events
+
+   click:Triggered when a mouse button is clicked.
+  dbclick: Triggered when a mouse button is double-clicked.
+  mouseenter:Triggered when the mouse pointer enters an element.
+  mouseleave:Triggered when the mouse pointer leaves an element.
+  mousemove:Triggered when the mouse moves within an element.
+
+
+Keyboard Events:
+
+keydown: Triggered when a key is pressed down.
+keyup: Triggered when a key is released.
+keypress: Triggered when a key is pressed (deprecated in favor of keydown and keyup).
+
+Form Events:
+
+submit: Triggered when a form is submitted.
+input: Triggered when the value of an input field changes.
+focus: Triggered when an input element gains focus.
+blur: Triggered when an input element loses focus.
+
+Window Events:
+
+load: Triggered when the page finishes loading.
+resize: Triggered when the window is resized.
+scroll: Triggered when the user scrolls in the page.
+
+
