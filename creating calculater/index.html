@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="container">
+        <h1>Basic Calculator</h1>
+        <div id="operands">
+            <input type="number" id="operand1" placeholder="Operand 1"><br>
+            <input type="number" id="operand2" placeholder="Operand 2">
+        </div>
+        <div style="display: flex; justify-content: center;">
+            <button id="add">Add</button>
+            <button id="sub">Subtract</button>
+            <button id="div">Divide</button>
+            <button id="mul">Multiply</button>
+        </div>
+        <div id="result">Result: </div>
+    </div>
+    <script>
+        const calculator=document.getElementById("container")
+        const O1=document.getElementById("operand1");
+        const O2=document.getElementById("operand2");
+        const result=document.getElementById("result");
+        const add=document.getElementById("add");
+        const sub=document.getElementById("sub");
+        const div=document.getElementById("div");
+        const mul=document.getElementById("mul");
+        
+
+
+        function calculate(operation){
+            let num1=parseFloat(O1.value);
+            let num2=parseFloat(O2.value);
+
+            if(isNaN(num1) || isNaN(num2)){
+                result.innerHTML="Result: please inter the valid numbers!";
+                return;
+            }
+
+            let r;
+
+            add.addEventListener("click",()=>calculate("+"));
+            sub.addEventListener("click",()=>calculate("-"));
+            mul.addEventListener("click",()=>calculate("*"));
+            div.addEventListener("click",()=>calculate("/"));
+
+
+            switch(operation){
+                case '+':
+                    r=num1+num2;
+                    result.innerHTML=`Result: ${r}`;
+                    break;
+
+                case '-':
+                r=num1-num2;
+                    result.innerHTML=`Result: ${r}`;
+                    break;
+
+                case '*':
+                    r=num1*num2;
+                    result.innerHTML=`Result: ${r}`;
+                    break;
+
+                case '/':
+                    r=num1/num2;
+                    result.innerHTML=`Result: ${r}`;
+                    break;
+
+                
+
+            }
+        }
+
+        add.addEventListener("click",()=>calculate("+"));
+
+
+        
+    </script>
+</body>
+</html>
